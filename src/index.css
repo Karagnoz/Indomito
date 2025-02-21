@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --black: #121212;
+    --white: #fffcfc;
+    --orange: #c8551e;
+    --green: #027860;
+    --blue-light: #218ea0;
+    --blue-dark: #152036;
+    --grey-blue: #a9c0c4;
+    --grey-light: #dce4e7;
+    --grey: #878787;
+    --red: #c81e1e;
+
+    --background: var(--grey-light);
+    --foreground: var(--blue-dark);
+    --card: var(--white);
+    --card-foreground: var(--blue-dark);
+    --popover: var(--white);
+    --popover-foreground: var(--blue-dark);
+    --primary: var(--orange);
+    --primary-foreground: var(--white);
+    --secondary: var(--green);
+    --secondary-foreground: var(--white);
+    --muted: var(--grey);
+    --muted-foreground: var(--grey);
+    --accent: var(--blue-dark);
+    --accent-foreground: var(--white);
+    --destructive: var(--red);
+    --destructive-foreground: var(--white);
+    --border: var(--blue-dark);
+    --input: var(--blue-dark);
+    --ring: var(--primary);
+    --radius: 0rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
